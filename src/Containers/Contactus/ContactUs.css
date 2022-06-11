@@ -1,0 +1,94 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.wrapper .right {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 50px auto;
+  width: 50%;
+}
+
+.right .input {
+  margin: 3px;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.error {
+  color: red;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+.right .input span {
+  color: red;
+  font-weight: 600;
+  font-size: 12px;
+  position: absolute;
+  bottom: -5px;
+  left: 2%;
+}
+
+.right .input input,
+.right .input textarea {
+  padding: 15px;
+  padding-left: 12px;
+  outline: none;
+  width: 95%;
+  border: none;
+  border-bottom: 3px solid rgba(92, 92, 92, 0.384);
+  resize: none;
+  border-radius: 3px;
+  transition: all 0.5s linear;
+  font-size: 14px;
+}
+
+.right .input input:focus {
+  border-bottom: 3px solid teal;
+  transition: all 0.5s linear;
+}
+
+.right button {
+  font-size: 17px;
+  padding: 15px 20px;
+  outline: none;
+  width: 200px;
+  border: none;
+  border-radius: 3px;
+  margin: 22px auto;
+  background-color: teal;
+  color: white;
+  box-shadow: 1px 1px 5px rgba(0, 73, 73, 0.342),
+    -1px -1px 5px rgba(1, 68, 68, 0.425);
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.right button:hover {
+  background: rgb(0, 90, 90);
+  color: rgb(255, 255, 255);
+  transition: all 0.3s linear;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  .wrapper .right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .right button {
+    width: 150px;
+    padding: 15px;
+    font-size: 15px;
+  }
+}
